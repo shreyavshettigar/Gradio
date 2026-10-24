@@ -2,7 +2,7 @@ import gradio as gr
 gr.close_all()
 
 def getDetails(name, age, preference, hobbies):
-    return f"Name:{name}\nAge:{age}\nSubject Preference : {preference}\n Hobbies: {[h for h in hobbies]}"
+    return f" your Name:{name}\nAge:{age}\nSubject Preference : {preference}\n Hobbies: {[h for h in hobbies]}"
 
 demo = gr.Interface(
     fn=getDetails,
